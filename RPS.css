@@ -31,7 +31,7 @@ body {
   }
   
   .greenText, #playerScoreDisplay {
-    color: rgb(28, 232, 28);
+    color: rgba(22, 105, 22, 0.948);
   }
   
   .redText, #computerScoreDisplay {

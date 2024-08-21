@@ -59,6 +59,17 @@ function playGame(playerChoice) {
        
 }   
 
+if (navigator.vibrate) {
+    navigator.vibrate(50); // Vibrate for 50ms
+}
 
-    
+
+// Add event listeners to buttons to provide vibration feedback
+document.querySelectorAll('.choices button').forEach(button => {
+button.addEventListener('click', () => {
+    if (navigator.vibrate) {
+        navigator.vibrate(30); // Vibrate for 30ms on button press
+    }
+});
+});
 
